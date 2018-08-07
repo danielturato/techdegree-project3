@@ -54,7 +54,7 @@ public class UserTest {
 
     @Test(expected = VotingException.class)
     public void downVotingNotAllowedByAuthorOnQuestion() throws Exception {
-        daniel.upVote(q);
+        daniel.downVote(q);
     }
 
     @Test(expected = VotingException.class)
